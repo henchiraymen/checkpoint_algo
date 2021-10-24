@@ -1,0 +1,24 @@
+ALGORITHM read_sentence
+VAR
+    sentence : STRING;
+    count1: INTEGER := 0;
+    count2: INTEGER := 0;
+    count3: INTEGER := 0;
+BEGIN
+    Read(sentence)
+    FOR i FROM 0 TO sentence.length() STEP step  DO
+        IF (sentence[i] <> ".") THEN
+            count1 := count1 + 1;
+        END_IF
+        IF (sentence[i] = " ") THEN
+            count2 := count2 + 1;
+        END_IF
+        IF (sentence[i] = "a" or sentence[i] = "e" or sentence[i] = "u" or sentence[i] = "i" or sentence[i] = "o" or sentence[i] = "A" or sentence[i] = "E" or sentence[i] = "U" or sentence[i] = "I" or sentence[i] = "O") THEN
+            count3 := count3 + 1;
+        END_IF
+    END_FOR
+    count2:= count2+1;
+    Write("The length of the sentence is : " + count1);
+    Write("The number of words in the sentence is : " + count2);
+    Write("The number of vowels in the sentence is : " + count3);
+END
