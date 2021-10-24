@@ -7,7 +7,7 @@ VAR
     i : INTEGER;
 BEGIN
     Read(sentence)
-    FOR i FROM 0 TO sentence.length() STEP step  DO
+    FOR i FROM 0 TO sentence.length() STEP 1  DO
         IF (sentence[i] <> ".") THEN
             count1 := count1 + 1;
         END_IF
