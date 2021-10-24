@@ -4,6 +4,7 @@ VAR
     count1: INTEGER := 0;
     count2: INTEGER := 0;
     count3: INTEGER := 0;
+    i : INTEGER;
 BEGIN
     Read(sentence)
     FOR i FROM 0 TO sentence.length() STEP step  DO
